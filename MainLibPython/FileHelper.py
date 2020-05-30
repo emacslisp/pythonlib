@@ -1,6 +1,6 @@
 import os, sys
 class FileHelper:
-  def stringToFile(str, filePath):
+  def stringToFile(self, str, filePath):
     fd = os.open(filePath, os.O_RDWR|os.O_CREAT)
     os.write(fd, str)
     os.close(fd)

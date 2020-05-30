@@ -1,4 +1,4 @@
-from FileHelper import FileHelper
+import MainLibPython
 
-fileHelper = FileHelper();
-print fileHelper.fileToString("FileHelperTest.py");
+fileHelper = MainLibPython.FileHelper();
+print(fileHelper.fileToString("FileHelperTest.py"));
