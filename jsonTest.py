@@ -1,3 +1,5 @@
-import json
+import MainLibPython
 
-print json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4, separators=(',', ': '))
+JsonHelper = MainLibPython.JsonHelper()
+jsonBody = '{"abc": 5, "def": 7}'
+print JsonHelper.indentJson(jsonBody)
