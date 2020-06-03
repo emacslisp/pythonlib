@@ -1,10 +1,15 @@
 class HashMap:
     thisHashMap = {}
     def put(self, key, value):
-        thisHashMap[key] = value
+        self.thisHashMap[key] = value
 
     def get(self, key):
-        return thisHashMap[key]
+        return self.thisHashMap[key]
 
     def getKeys(self):
-        return thisHashMap.keys()
+        return self.thisHashMap.keys()
+
+    def dump(self):
+        keys = self.getKeys()
+        for i in keys:
+            print self.thisHashMap[i]
