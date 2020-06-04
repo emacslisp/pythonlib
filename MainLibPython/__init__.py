@@ -6,3 +6,4 @@ from .OptionHelper import OptionHelper
 from .ArrayHelper import ArrayHelper
 from .DateTimeHelper import DateTimeHelper
 from .HashMap import HashMap
+from .HttpPostHelper import HttpPostHelper

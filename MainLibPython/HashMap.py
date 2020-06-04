@@ -12,4 +12,4 @@ class HashMap:
     def dump(self):
         keys = self.getKeys()
         for i in keys:
-            print self.thisHashMap[i]
+            print(self.thisHashMap[i])
