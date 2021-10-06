@@ -6,3 +6,6 @@ class TestCap(unittest.TestCase):
         text = 'python'
         result = cap.cap_text(text)
         self.assertEqual(result, 'Python')
+
+if __name__ == '__main__':
+    unittest.main()
