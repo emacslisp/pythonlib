@@ -6,6 +6,11 @@ class TestCap(unittest.TestCase):
         text = 'python'
         result = cap.cap_text(text)
         self.assertEqual(result, 'Python')
+    
+    def test_multiple_words(self):
+        text = 'month python'
+        result = cap.cap_text(text)
+        self.assertEqual(result, 'Month Python')
 
 if __name__ == '__main__':
     unittest.main()

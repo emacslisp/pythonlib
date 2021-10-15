@@ -8,5 +8,5 @@ class FileHelper:
   def fileToString(self, filePath):
     with open(filePath, 'r') as myfile:
       data=myfile.read()
-    return data;
+    return data
     
