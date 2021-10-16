@@ -46,3 +46,13 @@ print(results.group(3))
 test_phrase = 'This is a string! But it has xxxx. How can we remove it?'
 clean = re.findall(r'[^!.?]+', test_phrase)
 print(' '.join(clean))
+
+text = 'Only find the hypen-words in this sentence.'
+pattern = r'[\w]+-[\w]+'
+print(re.findall(pattern, text))
+
+text = "hello, would you like some catfish?"
+texttwo = "hello, would you like some catnap?"
+textthree = "hello, have you see this caterpillar?"
+
+print(re.search(r'cat(fish|nap|erpillar)', text))
